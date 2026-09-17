@@ -215,7 +215,7 @@ journalctl --user -b -o cat | grep -iE "error" | tail -30   # Shell 报错
 - **扩展装上了但没生效**：Wayland 下必须先注销重登，新扩展才会被扫描到。
 - **扩展变成 ERROR 后可能救不回来**：`disable`/`enable` 无反应，`ReloadExtension` 在 GNOME 50 未实现，只能注销重登。
 - **日志里的 `Can't update stage views actor … needs an allocation`** 是 Blur my Shell 给 Dock 插 actor 造成的正常刷屏，**不影响功能**。
-- **Top Bar Organizer 有个崩溃点**：动态出现的托盘图标（屏幕共享、U 盘、更新提示）会让它抛 `TypeError` 整体进 ERROR。仓库里已带本地补丁（见 `patches/`）。
+- **Top Bar Organizer 有个崩溃点**：动态出现的托盘图标（屏幕共享、U 盘、更新提示）会让它抛 `TypeError` 整体进 ERROR。`install.sh` 会在装完后自动执行 `python3 ~/.config/macos-look/macos-look.py patch-ext` 打上修复补丁（幂等，可重复执行）。
 
 ---
 
