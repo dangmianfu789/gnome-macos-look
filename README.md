@@ -47,7 +47,7 @@
 ## 快速开始
 
 ```bash
-git clone https://github.com/<your-name>/gnome-macos-look.git
+git clone https://github.com/dangmianfu789/gnome-macos-look.git
 cd gnome-macos-look
 ./install.sh
 ```
