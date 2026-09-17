@@ -82,6 +82,10 @@ LOGO_APPLY = {
     "symbolic-icon": True,          # 图标跟随顶栏颜色
     "show-activities-button": False,  # 不显示"活动"文字
     "menu-button-icon-size": 22,
+    # 苹果菜单里必须有电源与锁屏项 —— 否则"注销/重启/关机"在菜单里找不到
+    # （这是 macOS 苹果菜单的标准内容，也是本机唯一顺手的注销入口）
+    "show-power-options": True,
+    "show-lockscreen": True,
 }
 
 # 第三轮：macOS 菜单栏 / Spotlight / 通知位置 / 自动深浅色
